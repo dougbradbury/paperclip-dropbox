@@ -15,8 +15,6 @@ module Paperclip
           @options[:dropbox_visibility] ||= "public"
 
           @path_generator = PathGenerator.new(self, @options)
-
-          #dropbox_client # Force creation of dropbox_client
         end
       end
 
